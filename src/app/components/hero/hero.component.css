@@ -1,0 +1,164 @@
+.heroContainer{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: auto;
+    min-height: 300px ;
+    margin-top: 4rem;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.titleHero1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    color: #202020;
+    text-align: center;
+    font-size: clamp(1.9rem, 5vw, 4rem);
+}
+
+.descHero1{
+    margin-top: 2rem;
+    font-size: clamp(15px, 1.1vw, 1.1rem);
+    text-align: center;
+    color: #717171;
+    max-width: 699px !important;
+    margin-bottom: 2.66rem;
+}
+
+.titleHeroHighLighted {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    font-size: clamp(1.67rem, 5vw, 3.66rem);
+    background: linear-gradient(45deg, #0a725f, #0E8972, #15B99B, #22c7a9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
+}
+
+
+
+.or{
+    color: #717171;
+    margin: 0 1.5rem;
+}
+
+.containerTwoButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.containerTwoButtons button{
+    transition: 0.15s all ease-in-out;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: .8rem 1.3rem;
+}
+
+.containerTwoButtons button:first-child{
+    background: red;
+}
+
+.containerTwoButtons button:last-child{
+    background: blueviolet;
+}
+
+.containerTwoButtons button:first-child{
+    background: linear-gradient(90deg, #15B99B, #15B99B, #0E8972);
+    color: white;
+}
+
+.containerTwoButtons button:last-child{
+    border: 2px solid transparent;
+    background-image: 
+        linear-gradient(#ffffff, #ffffff), 
+        linear-gradient(90deg, #2fdebe, #1fcbac, #15B99B, #0E8972);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color: #0E8972;
+    transition: 0.4s all ease-in-out;
+    
+}
+
+
+.containerTwoButtons button:last-child:hover {
+    background-image: 
+        linear-gradient(#f4f4f4, #f4f4f4), 
+        linear-gradient(90deg, #15B99B, #15B99B, #0E8972);
+}
+
+.containerOfStars{
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width: 1024px) {
+    .heroContainer{
+        margin-top: 2rem;
+        min-height: 333px ;
+    }
+    .containerOfStars{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1111px) {
+    .heroContainer{
+        margin-top: 3rem;
+        min-height: 388px ;
+    }
+    .containerOfStars{
+        margin-bottom: 2rem;
+    }
+}
+
+
+.containerOfStars i{
+    color: #202020;
+    font-size: 14px;
+}
+
+
+.imageGradientShadow{
+    position: absolute;
+    z-index: -1;
+}
+
+.imageContainerOfMockup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.imageMockUp{
+    height: auto;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .containerTwoButtons {
+        flex-direction: column;
+        gap: 0.5rem; 
+    }
+
+    .containerTwoButtons .or {
+        margin: 0.5rem 0;
+    }
+    .containerTwoButtons button {
+        width: 250px !important;
+    }
+}

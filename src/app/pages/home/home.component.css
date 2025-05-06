@@ -1,0 +1,45 @@
+.HomeContainer{
+    max-width: 1333px !important;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.imageGradientShadowLeft{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    z-index: -1;
+    height: 300px; 
+    width: auto;
+}
+
+.imageGradientShadowRight{
+    position: absolute;
+    left: 0;
+    top:400px;
+    z-index: -1;
+    height: 700px; 
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .imageGradientShadowLeft {
+        height: 150px;  
+    }
+
+    .imageGradientShadowRight {
+        height: 350px;
+        top: 200px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .imageGradientShadowLeft {
+        height: 100px;
+    }
+
+    .imageGradientShadowRight {
+        height: 250px;
+        top: 150px;
+    }
+}

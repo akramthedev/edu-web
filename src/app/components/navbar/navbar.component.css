@@ -1,0 +1,148 @@
+.Navbar{
+    width: 100%;
+    backdrop-filter: blur(8px) saturate(200%);
+    -webkit-backdrop-filter: blur(8px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 90px;
+    display: flex;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease-in-out;
+    position: sticky !important;
+    top: 0 !important;
+    opacity: 0;   
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.NavbarShadow{
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 280px;
+}
+
+.logo img{
+    height: 40px;
+    width: auto;
+    object-fit: cover;
+    margin-right: 0.6rem;
+    cursor: pointer;
+}
+
+.logo span{
+    font-weight: 500;
+    color: #37322f;
+    font-size: 1.3rem;
+    cursor: pointer;
+    letter-spacing: 0.666px;
+}
+
+.butContainer{
+    width: 280px;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+.butContainer button:first-child{
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: 0.15s all ease-in-out;
+    cursor: pointer;
+    padding: 0.4rem 0.666rem;
+    border-radius: 0.3rem;
+}
+
+.butContainer button:last-child{
+    background: #15B99B;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s all ease-in-out;
+}
+
+.NavContainer button{
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: 0.15s all ease-in-out;
+    cursor: pointer;
+    margin: 0 .66rem;
+    padding: 0.4rem 0.666rem;
+    border-radius: 0.3rem;
+}
+
+.butContainer button:last-child:hover{
+    background-color: #11a58a;
+}
+
+.NavContainer button:hover, .butContainer button:first-child:hover{
+    background: #15b99b38;
+    color: #0c7a66;
+}
+
+
+
+.ellipsis {
+    background: #15B99B;
+    color: white;
+    outline: none;
+    border: none;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s all ease-in-out;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .Navbar {
+      height: 69px !important;
+    }
+    .NavContainer, .butContainer{
+      display: none;
+    }
+    .butContainer,
+    .logo {
+      width: auto;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .logo span {
+      display: none;
+    }
+    .butContainer button:last-child {
+      padding: 0.5rem 0.8rem;
+    }
+    .logo img {
+      height: 28px;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
