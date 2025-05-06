@@ -19,6 +19,7 @@ export class NavbarComponent implements OnInit {
 
   isMobile = false;
   isScrolled = false;
+  isNavbarOpen = false;
   private mobileBreakPoint = 1024; 
 
   ngOnInit(): void {
@@ -44,6 +45,10 @@ export class NavbarComponent implements OnInit {
 
   reloadPage(){
     window.location.reload();
+  }
+
+  toggleNavbar(){
+    this.isNavbarOpen = !this.isNavbarOpen;
   }
 
 }

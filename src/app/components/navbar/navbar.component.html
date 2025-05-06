@@ -25,8 +25,29 @@
             Créer un compte
         </button>
     </div>
-    <button *ngIf="isMobile" class="ellipsis" >
+    <button (click)="toggleNavbar()" *ngIf="isMobile" class="ellipsis" >
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
     </button>
+
+    <nav class="sidebar" [class.open]="isNavbarOpen" [ngClass]="{ 'open' : isNavbarOpen }" >
+      <button (click)="toggleNavbar()" *ngIf="isMobile" class="ellipsis2" >
+        <i class="fa-solid fa-xmark" ></i>
+      </button>
+      <ul>
+        <li><a href="#" (click)="toggleNavbar()" >Fonctionnalités et Services</a><i class="fa-solid fa-chevron-right" ></i></li>
+        <li><a href="#" (click)="toggleNavbar()" >Tarification et Plans</a><i class="fa-solid fa-chevron-right" ></i></li>
+        <li><a href="#" (click)="toggleNavbar()" >Sécurité et Confidentialité</a><i class="fa-solid fa-chevron-right" ></i></li>
+      </ul>
+      <div class="rowBtn1">
+        <button class="seConnecter">
+          Connectez-vous à votre compte
+        </button>
+        <button class="register">
+          Créer un nouveau compte
+        </button>
+      </div>
+    </nav>
+
+
 </div>
 

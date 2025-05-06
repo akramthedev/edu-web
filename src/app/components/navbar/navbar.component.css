@@ -29,14 +29,14 @@
     height: 40px;
     width: auto;
     object-fit: cover;
-    margin-right: 0.6rem;
+    margin-right: 0.4rem;
     cursor: pointer;
 }
 
 .logo span{
-    font-weight: 500;
-    color: #37322f;
-    font-size: 1.3rem;
+    font-weight:700;
+    color: #15B99B;
+    font-size: 1.7rem;
     cursor: pointer;
     letter-spacing: 0.666px;
 }
@@ -93,22 +93,6 @@
 
 
 
-.ellipsis {
-    background: #15B99B;
-    color: white;
-    outline: none;
-    border: none;
-    height: 37px;
-    width: 37px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: 0.15s all ease-in-out;
-}
-
 
 
 
@@ -140,9 +124,138 @@
     }
 }
 
-
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+
+
+
+
+
+  
+  .sidebar {
+    position: fixed;
+    left: -125%;
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all ease-in-out;
+
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    margin-bottom: 0.77rem;
+    padding: 0 1rem;
+    border-radius: 0.4rem !important;
+    justify-content: space-between;
+}
+  
+  .sidebar a {
+    height: 52px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #202020;
+    width: 100%;
+    text-decoration: none;
+  }
+
+
+
+.ellipsis {
+    background: #15B99B;
+    color: white;
+    outline: none;
+    border: none;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s all ease-in-out;
+}
+
+
+.ellipsis2 {
+    background: #15B99B;
+    color: white;
+    outline: none;
+    border: none;
+    height: 37px;
+    width: 37px;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s all ease-in-out;
+}
+
+
+
+
+
+.seConnecter, .register{
+    background-color: #15B99B;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid #12967e;
+    color: white;
+}
+
+.register{
+    color: #202020;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 0.4rem !important;
+    background-color: rgb(241, 241, 241);
+}
+
+.rowBtn1{
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.logoX{
+    position: absolute;
+    left: 0;
+    top: 1rem;
 }
