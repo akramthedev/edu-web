@@ -73,20 +73,17 @@
     padding: .8rem 1.3rem;
 }
 
-.containerTwoButtons button:first-child{
-    background: red;
+ 
+.containerTwoButtons .uhsfwuodhuhwdofxho{
+    background: linear-gradient(30deg, #086453, #086453, #0E8972, #15B99B, #1cc6a7, #32f0cd);
+    color: white;
 }
-
-.containerTwoButtons button:last-child{
-    background: blueviolet;
-}
-
-.containerTwoButtons button:first-child{
-    background: linear-gradient(90deg, #15B99B, #15B99B, #0E8972);
+.containerTwoButtons .uhsfwuodhuhwdofxho:hover{
+    background: linear-gradient(30deg, #086453, #0E8972, #15B99B, #15B99B, #15B99B);
     color: white;
 }
 
-.containerTwoButtons button:last-child{
+.containerTwoButtons .uosfwhdohwuhdofuhsduof{
     border: 2px solid transparent;
     background-image: 
         linear-gradient(#ffffff, #ffffff), 
@@ -99,7 +96,7 @@
 }
 
 
-.containerTwoButtons button:last-child:hover {
+.containerTwoButtons .uosfwhdohwuhdofuhsduof:hover {
     background-image: 
         linear-gradient(#f4f4f4, #f4f4f4), 
         linear-gradient(90deg, #15B99B, #15B99B, #0E8972);
