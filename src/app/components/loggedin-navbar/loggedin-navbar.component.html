@@ -2,43 +2,33 @@
   class="Navbar" 
   [ngClass]="{ 'NavbarShadow' : isScrolled }"  
 >
-    <a style="text-decoration: none;" href="#">
-      <div class="logo" (click)="reloadPage()">
+    <a style="text-decoration: none;" href="/profile">
+      <div class="logo" >
         <img src="assets/logo.png" alt="Logo">
         <span>EDU</span>
       </div>
     </a>
     <div class="NavContainer">
-      <a href="#why">
+      <a href="/profile">
         <button>
-          Fonctionnalités
+           Profile
         </button>
       </a>  
-      <a href="#tarif">
+      <a href="/politique">
         <button>
-          Tarification
+          Politique
         </button>
       </a>
-      <a href="#security">
+      <a href="/conditions">
         <button>
-          Sécurité
-        </button>
-      </a>
-      <a href="#screens">
-        <button>
-          Showcase
+          Conditions d’utilisation
         </button>
       </a>
     </div>
     <div *ngIf="!isMobile" class="butContainer">
-        <a href="/login" style="text-decoration: none;" >
-          <button>
-            Se connecter
-          </button>
-        </a>
         <a href="/register" style="text-decoration: none;" >
           <button>
-            Créer un compte
+            Déconnexion
           </button>
         </a>
     </div>
@@ -51,18 +41,13 @@
         <i class="fa-solid fa-xmark" ></i>
       </button>
       <ul>
-        <li><a href="#why" (click)="toggleNavbar()" >Fonctionnalités et Services</a><i class="fa-solid fa-chevron-right" ></i></li>
-        <li><a href="#tarif" (click)="toggleNavbar()" >Tarification et Plans</a><i class="fa-solid fa-chevron-right" ></i></li>
-        <li><a href="#security" (click)="toggleNavbar()" >Sécurité et Confidentialité</a><i class="fa-solid fa-chevron-right" ></i></li>
-        <li><a href="#screens" (click)="toggleNavbar()" >Un aperçu concret</a><i class="fa-solid fa-chevron-right" ></i></li>
-        <li><a href="#faq" (click)="toggleNavbar()" >Questions fréquentes</a><i class="fa-solid fa-chevron-right" ></i></li>
+        <li><a href="/profile" (click)="toggleNavbar()" >Profile</a><i class="fa-solid fa-chevron-right" ></i></li>
+        <li><a href="/politique" (click)="toggleNavbar()" >Politique de confidentialité</a><i class="fa-solid fa-chevron-right" ></i></li>
+        <li><a href="/conditions" (click)="toggleNavbar()" >Conditions d’utilisation</a><i class="fa-solid fa-chevron-right" ></i></li>
       </ul>
       <div class="rowBtn1">
         <button class="seConnecter">
-          Connectez-vous à votre compte
-        </button>
-        <button class="register">
-          Créer un nouveau compte
+          Sé déconnecter de votre compte
         </button>
       </div>
     </nav>
