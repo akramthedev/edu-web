@@ -2,28 +2,40 @@
   class="Navbar" 
   [ngClass]="{ 'NavbarShadow' : isScrolled }"  
 >
-    <div class="logo" (click)="reloadPage()">
+    <a style="text-decoration: none;" href="#">
+      <div class="logo" (click)="reloadPage()">
         <img src="assets/logo.png" alt="Logo">
         <span>EDU</span>
-    </div>
+      </div>
+    </a>
     <div class="NavContainer">
-      <button>
-        Fonctionnalités
-      </button>  
-      <button>
-        Tarification
-      </button>
-      <button>
-        Sécurité
-      </button>
+      <a href="#why">
+        <button>
+          Fonctionnalités
+        </button>
+      </a>  
+      <a href="#tarif">
+        <button>
+          Tarification
+        </button>
+      </a>
+      <a href="#security">
+        <button>
+          Sécurité
+        </button>
+      </a>
     </div>
     <div *ngIf="!isMobile" class="butContainer">
-        <button>
+        <a href="/login" style="text-decoration: none;" >
+          <button>
             Se connecter
-        </button>
-        <button>
+          </button>
+        </a>
+        <a href="/register" style="text-decoration: none;" >
+          <button>
             Créer un compte
-        </button>
+          </button>
+        </a>
     </div>
     <button (click)="toggleNavbar()" *ngIf="isMobile" class="ellipsis" >
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
@@ -34,9 +46,11 @@
         <i class="fa-solid fa-xmark" ></i>
       </button>
       <ul>
-        <li><a href="#" (click)="toggleNavbar()" >Fonctionnalités et Services</a><i class="fa-solid fa-chevron-right" ></i></li>
-        <li><a href="#" (click)="toggleNavbar()" >Tarification et Plans</a><i class="fa-solid fa-chevron-right" ></i></li>
-        <li><a href="#" (click)="toggleNavbar()" >Sécurité et Confidentialité</a><i class="fa-solid fa-chevron-right" ></i></li>
+        <li><a href="#why" (click)="toggleNavbar()" >Fonctionnalités et Services</a><i class="fa-solid fa-chevron-right" ></i></li>
+        <li><a href="#tarif" (click)="toggleNavbar()" >Tarification et Plans</a><i class="fa-solid fa-chevron-right" ></i></li>
+        <li><a href="#security" (click)="toggleNavbar()" >Sécurité et Confidentialité</a><i class="fa-solid fa-chevron-right" ></i></li>
+        <li><a href="#screens" (click)="toggleNavbar()" >Un aperçu concret</a><i class="fa-solid fa-chevron-right" ></i></li>
+        <li><a href="#faq" (click)="toggleNavbar()" >Questions fréquentes</a><i class="fa-solid fa-chevron-right" ></i></li>
       </ul>
       <div class="rowBtn1">
         <button class="seConnecter">

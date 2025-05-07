@@ -29,17 +29,18 @@
     height: 40px;
     width: auto;
     object-fit: cover;
-    margin-right: 0.4rem;
+    margin-right: 0.6rem;
     cursor: pointer;
 }
 
 .logo span{
     font-weight:700;
     color: #15B99B;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     cursor: pointer;
     letter-spacing: 0.666px;
 }
+
 
 .butContainer{
     width: 280px;
@@ -47,7 +48,7 @@
     justify-content: flex-end;
     display: flex;
 }
-.butContainer button:first-child{
+.butContainer a:first-child button{
     background: transparent;
     outline: none;
     border: none;
@@ -57,7 +58,7 @@
     border-radius: 0.3rem;
 }
 
-.butContainer button:last-child{
+.butContainer a:last-child button{
     background: #15B99B;
     color: white;
     outline: none;
@@ -82,11 +83,11 @@
     border-radius: 0.3rem;
 }
 
-.butContainer button:last-child:hover{
+.butContainer a:last-child button:hover{
     background-color: #11a58a;
 }
 
-.NavContainer button:hover, .butContainer button:first-child:hover{
+.NavContainer button:hover, .butContainer a:first-child button:hover{
     background: #15b99b38;
     color: #0c7a66;
 }
@@ -137,7 +138,7 @@
   
   .sidebar {
     position: fixed;
-    left: -125%;
+    left: -200%;
     background-color: white;
     width: 100%;
     top: 0px;
@@ -172,7 +173,7 @@
 }
   
   .sidebar a {
-    height: 52px;
+    height: 45px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -225,7 +226,7 @@
 
 .seConnecter, .register{
     background-color: #15B99B;
-    height: 52px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;

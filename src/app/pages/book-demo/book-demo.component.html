@@ -1,0 +1,212 @@
+<div class="HomeContainer">
+    <app-navbar></app-navbar>
+    <!-- <app-error-success 
+        [isError]="isErrorResponse" 
+        [showIt]="showItResponse" 
+        [message]="messageResponse">
+    </app-error-success> -->
+
+
+    <div  *ngIf="!isMobile"  class="home home4">
+        <span class="home4Spanish">
+            Réserver une démo
+        </span>
+        <div class="contHome contHome3976442968572">
+            <div class="booking-form">
+
+            <div [ngClass]="success ? 'noallInputs6' : 'allInputs6'">
+                <div class="form-group">
+                <label for="name">Nom et prénom :</label>
+                <input type="text" id="name"  placeholder="Veuillez saisir votre nom et prénom..." />
+                </div>
+
+                <div class="form-group">
+                <label for="email">Email :</label>
+                <input
+                    type="email"
+                    id="email"
+                    [ngClass]="{ 'input-error': isInputErrors }"
+                    (ngModelChange)="handleEmailChange()"
+                    placeholder="Veuillez saisir votre adresse email..." />
+                </div>
+
+                <div class="form-group">
+                <label for="mobile">Téléphone :</label>
+                <input type="text" id="mobile"  placeholder="Veuillez saisir votre numéro de téléphone..." />
+                </div>
+
+                <div class="form-group" *ngIf="!success">
+                <label for="type">Choix entre :</label>
+                <div class="choicex">
+                    <button (click)="setRemote(true)" [ngClass]="{ 'activateRemote': remote === true }">À distance</button>
+                    <span>Ou bien</span>
+                    <button (click)="setRemote(false)" [ngClass]="{ 'activateRemote': remote === false }">En présentiel</button>
+                </div>
+                </div>
+            </div>
+
+            <div *ngIf="success" [ngClass]="showiT ? 'pornhubZidenx pornhub pornhub2' : 'nopornhub2'">
+                <div class="rowItEm"><span>ID :</span><span>{{ identification || '---' }}</span></div>
+                <div class="rowItEm"><span>Nom et prénom :</span><span>{{ fullName || '---' }}</span></div>
+                <div class="rowItEm"><span>Adresse Email :</span><span>{{ email || '---' }}</span></div>
+                <div class="rowItEm"><span>Numéro de téléphone :</span><span>{{ mobile || '---' }}</span></div>
+                <div class="rowItEm"><span>Type du rendez-vous :</span><span>{{ remote ? 'À distance' : 'En présentiel' }}</span></div>
+                <div class="rowItEm"><span>Date choisie :</span><span>{{ selectedTime }} / {{ dateInFrensh || '---' }}</span></div>
+            </div>
+
+            <div [ngClass]="success ? 'nopornhub' : 'pornhub'">
+                <div class="calendar-container">
+                <div class="calendar-header">
+                    <button 
+                    class="zrshqfuoshdfuhqdfuohoqdf"
+                    [ngClass]="{ 'shrufhsurhfuosehfohoqudf': isPreviousMonthDisabled() }"
+                    (click)="goToPreviousMonth()" 
+                    [disabled]="isPreviousMonthDisabled()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <h3>{{ currentDate | date:'MMMM yyyy' }}</h3>
+                    <button class="zrshqfuoshdfuhqdfuohoqdf" (click)="goToNextMonth()">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="calendar-grid">
+                    <button
+                    *ngFor="let date of calendarDates"
+                    [disabled]="isDateDisabled(date)"
+                    (click)="!isDateDisabled(date) && toggleDateSelection(date)"
+                    [ngClass]="{
+                        'calendar-day': true,
+                        'selectedXXXX': selectedDate === date.toDateString(),
+                        'weekend': date.getDay() === 0 || date.getDay() === 6
+                    }">
+                    {{ date.getDate() }}
+                    </button>
+                </div>
+                </div>
+
+                <div class="zushufhsqdfohqudfohuqohfouhqf">
+                <button 
+                    (click)="handleSubmit()"
+                    [disabled]="!selectedDate || !selectedTime"
+                    [ngClass]="selectedDate && selectedTime ? 'addColors' : 'unClickables'">
+                    {{ loader ? 'Envoi en cours...' : 'Soumettre la réservation' }}
+                </button>
+                </div>
+            </div>
+
+            <div [ngClass]="{
+                'pornHub1': true,
+                'NoShowIt': success,
+                'time-picker-container': selectedDate
+            }">
+                <h3>Choisissez une heure :</h3>
+                <div class="time-options">
+                <button
+                    *ngFor="let time of availableHours"
+                    (click)="handleTimeSelection(time)"
+                    [ngClass]="{ 'time-option': true, 'selected': selectedTime === time }">
+                    {{ time }}
+                </button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div *ngIf="isMobile" class="mobile-booking-container">
+        <h2 class="mobile-title">Réserver une démo</h2>
+      
+        <div class="mobile-form-section">
+          <div class="form-group">
+            <label for="name">Nom et prénom :</label>
+            <input type="text" id="name" placeholder="Veuillez saisir votre nom et prénom..." />
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              [ngClass]="{ 'input-error': isInputErrors }"
+              (ngModelChange)="handleEmailChange()"
+              placeholder="Veuillez saisir votre adresse email..." />
+          </div>
+      
+          <div class="form-group">
+            <label for="mobile">Téléphone :</label>
+            <input type="text" id="mobile" placeholder="Veuillez saisir votre numéro de téléphone..." />
+          </div>
+      
+          <div class="form-group">
+            <label for="type" class="sfdiwf">Choix entre :</label>
+            <div class="mobile-choice">
+              <button (click)="setRemote(true)" [ngClass]="{ 'activateRemote': remote === true }">À distance</button>
+              <span>Ou bien</span>
+              <button (click)="setRemote(false)" [ngClass]="{ 'activateRemote': remote === false }">En présentiel</button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="calendar-container mobile-calendar">
+          <div class="calendar-header">
+            <button
+              class="zrshqfuoshdfuhqdfuohoqdf"
+              [ngClass]="{ 'shrufhsurhfuosehfohoqudf': isPreviousMonthDisabled() }"
+              (click)="goToPreviousMonth()"
+              [disabled]="isPreviousMonthDisabled()">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <h3>{{ currentDate | date:'MMMM yyyy' }}</h3>
+            <button class="zrshqfuoshdfuhqdfuohoqdf" (click)="goToNextMonth()">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+      
+          <div class="calendar-grid">
+            <button
+              *ngFor="let date of calendarDates"
+              [disabled]="isDateDisabled(date)"
+              (click)="!isDateDisabled(date) && toggleDateSelection(date)"
+              [ngClass]="{
+                'calendar-day': true,
+                'selectedXXXX': selectedDate === date.toDateString(),
+                'weekend': date.getDay() === 0 || date.getDay() === 6
+              }">
+              {{ date.getDate() }}
+            </button>
+          </div>
+        </div>
+      
+        <div class="time-picker-container mobile-timepicker" *ngIf="selectedDate">
+          <h3>Choisissez une heure :</h3>
+          <div class="time-options">
+            <button
+              *ngFor="let time of availableHours"
+              (click)="handleTimeSelection(time)"
+              [ngClass]="{ 'time-option': true, 'selected': selectedTime === time }">
+              {{ time }}
+            </button>
+          </div>
+        </div>
+      
+        <div class="zushufhsqdfohqudfohuqohfouhqf">
+          <button
+            (click)="handleSubmit()"
+            [disabled]="!selectedDate || !selectedTime"
+            [ngClass]="selectedDate && selectedTime ? 'addColors' : 'unClickables'">
+            {{ loader ? 'Envoi en cours...' : 'Soumettre la réservation' }}
+          </button>
+        </div>
+      </div>
+
+
+      
+
+
+
+</div>

@@ -1,0 +1,546 @@
+.HomeContainer{
+    max-width: 1333px !important;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.imageGradientShadowLeft{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    z-index: -1;
+    height: 300px; 
+    width: auto;
+}
+
+.imageGradientShadowRight{
+    position: absolute;
+    left: 0;
+    top:400px;
+    z-index: -1;
+    height: 700px; 
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .imageGradientShadowLeft {
+        height: 150px;  
+    }
+
+    .imageGradientShadowRight {
+        height: 350px;
+        top: 200px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .imageGradientShadowLeft {
+        height: 100px;
+    }
+
+    .imageGradientShadowRight {
+        height: 250px;
+        top: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .calendar-day {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .calendar-day:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selectedXXXX {
+    background-color: #15B99B !important;
+    color: white !important;
+  }
+  
+  .calendar-grid button:disabled {
+    background-color: #ddd !important;
+    cursor: not-allowed !important;
+  }
+
+  
+
+
+
+  .contHome3976442968572{
+    padding:  0 !important;
+    padding-top: 15vh !important;
+}
+
+
+.booking-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1050px) {
+    .booking-form{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between;
+    }
+}
+
+
+.pornHub1{
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.777s all ease-in-out;
+}
+
+
+.pornhub{
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    width: 400px;    transition: 0.777s all ease-in-out;
+    opacity: 1;
+    min-height: 300px;
+    height: auto;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    padding-top: 0;
+}
+.nopornhub{
+    width: 0;
+    visibility: hidden;
+}
+
+.nopornhub2{
+    visibility: hidden;
+    width: 500px !important;
+}
+.pornhub2{
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 500px !important;
+
+}
+.allInputs6{
+    height: 300px;
+    visibility: visible;
+    width: 400px;
+    padding-top: 1rem;
+    margin-right: 1.5rem;
+    transition: 0.777s all ease-in-out;
+}
+
+.form-group{
+    height: 70px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input{
+    height: 45px;
+    width: 100%;
+    margin-top: 7px;
+    border-radius: 0.3rem;
+    border: 1px solid rgb(193, 193, 193);
+    outline: none;
+    padding: 0 1rem;
+}
+
+
+.form-group
+input:focus{
+  border: 1px solid #15B99B;
+}
+
+.form-group label{
+    font-weight: 500;
+}
+
+.zrshqfuoshdfuhqdfuohoqdf{
+    background-color: gainsboro;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+}
+
+.shrufhsurhfuosehfohoqudf{
+    cursor: not-allowed;
+    background-color: rgb(243, 243, 243);
+}
+
+.shrufhsurhfuosehfohoqudf i{
+    color: rgb(179, 179, 179);
+}
+
+.contHome3976442968572 h2{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+
+.contHome3976442968572 h2 span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #15B99B;
+}
+
+
+
+
+.time-picker-container{
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    width: 400px;    transition: 0.777s all ease-in-out;
+    opacity: 1;
+    min-height: 300px;
+    height: auto;
+    max-height: 200px;
+    overflow:  hidden !important;
+    padding: 1rem;
+    margin-left: 3rem;
+    padding-top: 0;
+
+}
+
+
+.time-option.selected {
+    background-color: #15B99B; /* Green background */
+    color: white;
+    border: 2px solid #fff; /* White border */
+  }
+  
+
+.calendar-header h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+.time-option{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 0.2rem;
+    border: 1px solid rgb(210, 210, 210);
+}
+
+.time-options{
+    max-height: 200px;
+    overflow: hidden !important;
+}
+
+
+
+.time-picker-container h3{
+    font-size: 1.1rem;
+    font-weight: 600; 
+    padding-top: .5rem;  
+    margin-bottom: 1.5rem;
+}
+
+.time-picker-container h3 span{
+    font-size: 1.1rem;
+    font-weight: 500; 
+    color: #15B99B;
+}
+
+.zushufhsqdfohqudfohuqohfouhqf{
+    height:85px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.zushufhsqdfohqudfohuqohfouhqf button{
+    width: 100%;
+    background-color:#15B99B ;
+    height: 45px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    border: 1px solid gainsboro;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+
+.zushufhsqdfohqudfohuqohfouhqf button:hover{
+    background-color:#15B99B ;
+}
+
+.zushufhsqdfohqudfohuqohfouhqf .unClickables{
+    cursor: not-allowed;
+    background-color: rgb(235, 235, 235);
+}
+
+.zushufhsqdfohqudfohuqohfouhqf .unClickables:hover{
+    background-color: rgb(235, 235, 235);
+}
+.zushufhsqdfohqudfohuqohfouhqf .addColors{
+    background-color:#15B99B ;
+}
+
+.input-error{
+    border: 2px solid rgb(221, 0, 0) !important;
+}
+
+.noallInputs6{
+    width: 0 !important;
+    visibility: hidden;
+}
+
+
+.rowItEm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+.rowItEm span:first-child{
+    font-weight: 600;
+
+}
+
+.NoShowIt{
+    width: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.pornhubZidenx {
+    z-index: 999;
+}
+
+.choicex{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.home4{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.home4 .contHome3976442968572{
+    padding: 0 !important;
+    margin:  0 !important;
+    height: calc(100vh - 44px) !important;
+    display: flex !important;
+    padding-top: 8vh !important;
+}
+
+.choicex button{
+    width: 150px !important;
+    height: 45px;
+    transition: 0.3s all ease-in-out;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+}
+
+
+.choicex button:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+
+
+.choicex span{
+    color: gray !important;
+}
+
+.rowItEm button{
+    width: 100% !important;
+    height: 45px;
+    background-color: #15B99B;
+    transition: 0.3s all ease-in-out;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.rowItEm button:hover{
+    background-color: #15B99B;
+}
+
+
+ 
+
+.home4Spanish{
+    font-size: clamp(1.7rem, 5vw, 3rem);
+    margin-top: 7rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .booking-form {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+  
+    .allInputs6,
+    .pornhub,
+    .time-picker-container {
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 1rem !important;
+    }
+  
+    .time-options {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+    }
+  
+    .time-option {
+      width: 30% !important;
+      margin: 0.3rem !important;
+    }
+  
+    .calendar-grid {
+      grid-template-columns: repeat(7, 1fr) !important;
+      padding: 0.5rem !important;
+    }
+  }
+  
+
+
+
+
+
+
+
+  .mobile-booking-container {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .mobile-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .mobile-form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .mobile-choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .mobile-choice button {
+    flex: 1;
+    height: 45px;
+    border: 1px solid gainsboro;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mobile-choice button:hover {
+    background-color: #efefef;
+  }
+  
+  .mobile-calendar,
+  .mobile-timepicker {
+    margin-top: 2rem;
+  }
+  
+  .time-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .time-option {
+    flex: 1 0 45%;
+    min-width: 100px;
+  }
+  
+
+
+
+ .activateRemote{
+    background-color: #15B99B !important;
+    color: white !important;
+}
+ .activateRemote:hover{
+    background-color: #15B99B !important;
+    color: white !important;
+}
+
+.sfdiwf{
+    margin-bottom: .5rem !important;
+}

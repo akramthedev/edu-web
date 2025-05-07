@@ -160,6 +160,9 @@
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 10rem;
+    opacity: 0 ;
+    animation: slideInFromBottom 1.111s .7s forwards !important;
+
 }
 
 .imageMockUp{
